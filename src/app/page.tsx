@@ -27,12 +27,13 @@ export default async function Home() {
 
           <div className="w-full mt-4">
             {isAuth ? (
-              <FileUpload></FileUpload>
+              <FileUpload />
             ) : (
               // (console.log(isAuth))
               <Link href="/sign-in">
                 <Button>
-                  login to get started <LogIn className="w-4 h-4 ml-2"></LogIn>
+                  login to get started
+                  <LogIn className="w-4 h-4 ml-2"></LogIn>
                 </Button>
               </Link>
             )}
